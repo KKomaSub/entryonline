@@ -58,6 +58,7 @@
                 .catch(() => {
                     // 자동 복사가 거부된 경우 구식 방식으로 재시도
                     legacyCopy(textToCopy);
+                    window.close();
                 });
             } else {
                 // HTTP 환경이거나 구형 브라우저인 경우
