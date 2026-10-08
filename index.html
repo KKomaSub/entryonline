@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>꼬꼬마프로그래머가 제작함. 엔트리 실시간 변수, 리스트 복구 코드</title>
+</head>
+<body>
+
+    <script>
+        fetch('https://kkomaweb.com/EntrOnlineCloudVariableFixCode/main.js')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('파일을 불러오는데 실패했습니다.');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.body.textContent = data;
+            })
+            .catch(error => {
+                document.body.textContent = data;
+            });
+    </script>
+</body>
+</html>
