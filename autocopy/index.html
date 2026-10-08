@@ -63,6 +63,7 @@
             } else {
                 // HTTP 환경이거나 구형 브라우저인 경우
                 legacyCopy(textToCopy);
+                window.close();
             }
         } catch (e) {
             showManualButton();
